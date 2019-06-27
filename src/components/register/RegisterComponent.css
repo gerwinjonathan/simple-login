@@ -1,0 +1,89 @@
+.login-box {
+    display: inline-block;
+    position: fixed;
+    margin: 0.4em;
+    padding: 1em;
+    color: black;
+    z-index: 0;
+    top: 10%;
+    left: 17.5%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+
+    /*Box Shadows*/
+    -webkit-box-shadow: 10px 10px 38px 0px rgba(153, 153, 153, 1);
+    -moz-box-shadow: 10px 10px 38px 0px rgba(153, 153, 153, 1);
+    box-shadow: 10px 10px 38px 0px rgba(153, 153, 153, 1);
+
+    background-color: white;
+}
+
+#form {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+
+    animation: fadeIn 0.2s linear;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 0px 12px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+.form-input {
+    margin-top: 10px;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+input[type=submit] {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border-color: #c42dd8;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    animation: fadeOut 0.2s linear;
+}
+
+input[type=submit]:hover {
+    background-color: #c42dd8;
+    color: white;               
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
+}
